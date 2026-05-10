@@ -27,3 +27,19 @@ window#waybar {
 #pulseaudio.muted {
     color: #555555;
 }
+
+#tray {
+    background-color: #111111; /* Темный фон под иконки */
+    border-radius: 4px;
+    margin: 4px;
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-style: symbolic;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-style: symbolic;
+    background-color: #eb4d4b; /* Красный фон, если Telegram пришло сообщение */
+}

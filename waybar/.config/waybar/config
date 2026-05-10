@@ -4,7 +4,7 @@
     "height": 24,
     "modules-left": ["hyprland/workspaces"], //"hyprland/window"
     "modules-center": ["clock"],
-    "modules-right": ["cpu", "memory", "network", "bluetooth", "pulseaudio", "hyprland/language", "battery"],
+    "modules-right": ["cpu", "memory", "network", "bluetooth", "pulseaudio", "tray", "hyprland/language", "battery"],
     
     "hyprland/workspaces": {
         "format": "{name}",
@@ -37,5 +37,10 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "kitty -e bluetoothctl" 
     },
+
+"tray": {
+    "icon-size": 18,
+    "spacing": 10
+},
 
 }
