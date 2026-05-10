@@ -1,47 +1,46 @@
-/* Обнуляем весь дефолтный GTK-мусор */
-* {
-    font-family: "JetBrainsMono Nerd Font", monospace;
-    font-size: 14px;
-    border: none;
-    border-radius: 0px;
-    box-shadow: none;
-    outline: none;
-}
-
-/* Главное окно wofi */
 window {
     margin: 0px;
-    border: 1px solid #ffffff; /* Тонкая рамка, как у активного окна в Hyprland */
     background-color: #000000;
+    /* Тонкая белая граница в 1 пиксель и закругление 4 */
+    border: 1px solid #ffffff; 
+    border-radius: 4px;
+    font-family: "JetBrainsMono Nerd Font", "monospace";
+    font-size: 14px;
 }
 
-/* Контейнеры внутри */
-#inner-box, #outer-box, #scroll {
-    background-color: #000000;
+#outer-box {
+    margin: 2px;
+    border: none;
+    background-color: transparent;
 }
 
-/* Поле ввода */
 #input {
-    margin: 10px 10px 5px 10px;
-    padding: 10px;
-    border: 1px solid #333333; /* Едва заметная рамка вокруг поля ввода */
-    background-color: #000000;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #111111; /* Чуть светлее фона для поля ввода */
+}
+
+#inner-box {
+    margin: 2px;
+    border: none;
+    background-color: transparent;
+}
+
+#entry {
+    border-radius: 4px; /* Чтобы выделение тоже было со скруглением */
+}
+
+#entry:selected {
+    background-color: #222222; /* Темно-серое выделение */
+}
+
+#text {
+    margin: 3px 10px;
     color: #ffffff;
 }
 
-/* Неактивные пункты меню */
-#text {
-    margin: 5px;
-    padding: 5px;
-    color: #aaaaaa; /* Приглушенный серый, чтобы не резать глаз */
-}
-
-/* Выбранный пункт меню */
-#entry:selected {
-    background-color: #ffffff;
-}
-
-#entry:selected #text {
-    color: #000000; /* Жесткая инверсия: черный текст на белом фоне */
-    font-weight: bold;
+#text:selected {
+    color: #ffffff;
 }

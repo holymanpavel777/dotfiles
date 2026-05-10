@@ -1,11 +1,10 @@
-show=drun
-prompt=❯
-width=450
-lines=8
+width=400
+height=300
 location=center
-allow_markup=true
-allow_images=false
-hide_scroll=true
+show=drun
+prompt=Search...
+filter_rate=100
+allow_images=true
+image_size=24
 term=kitty
-# Отключаем поиск нечувствительный к регистру для скорости, если нужно — раскомментируй
-# insensitive=true
+allow_images=false
