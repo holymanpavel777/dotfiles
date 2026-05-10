@@ -1,0 +1,11 @@
+show=drun
+prompt=❯
+width=450
+lines=8
+location=center
+allow_markup=true
+allow_images=false
+hide_scroll=true
+term=kitty
+# Отключаем поиск нечувствительный к регистру для скорости, если нужно — раскомментируй
+# insensitive=true

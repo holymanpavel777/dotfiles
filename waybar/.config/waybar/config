@@ -1,0 +1,41 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["hyprland/workspaces"], //"hyprland/window"
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "network", "bluetooth", "pulseaudio", "hyprland/language", "battery"],
+    
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "on-click": "activate"
+    },
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "interval": 1
+    },
+
+
+"pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "MUT",
+        "scroll-step": 5,
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    },
+
+"hyprland/language": {
+        "format": "{short}",
+        "keyboard-name": "at-translated-set-2-keyboard" 
+    },
+
+"bluetooth": {
+        "format": "BT",
+        "format-disabled": "", // Скрываем, если выключен
+        "format-connected": "BT {device_alias}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "on-click": "kitty -e bluetoothctl" 
+    },
+
+}

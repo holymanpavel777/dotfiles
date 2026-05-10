@@ -1,0 +1,8 @@
+[manager]
+# Строгий белый цвет для выбранного файла, без ярких фонов
+hovered         = { fg = "#000000", bg = "#ffffff", bold = true }
+preview_hovered = { underline = true }
+
+# Приглушенные цвета для интерфейса
+border_style  = { fg = "#555555" }
+syntect_theme = "base16-ocean.dark"

@@ -1,0 +1,47 @@
+/* Обнуляем весь дефолтный GTK-мусор */
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    outline: none;
+}
+
+/* Главное окно wofi */
+window {
+    margin: 0px;
+    border: 1px solid #ffffff; /* Тонкая рамка, как у активного окна в Hyprland */
+    background-color: #000000;
+}
+
+/* Контейнеры внутри */
+#inner-box, #outer-box, #scroll {
+    background-color: #000000;
+}
+
+/* Поле ввода */
+#input {
+    margin: 10px 10px 5px 10px;
+    padding: 10px;
+    border: 1px solid #333333; /* Едва заметная рамка вокруг поля ввода */
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Неактивные пункты меню */
+#text {
+    margin: 5px;
+    padding: 5px;
+    color: #aaaaaa; /* Приглушенный серый, чтобы не резать глаз */
+}
+
+/* Выбранный пункт меню */
+#entry:selected {
+    background-color: #ffffff;
+}
+
+#entry:selected #text {
+    color: #000000; /* Жесткая инверсия: черный текст на белом фоне */
+    font-weight: bold;
+}

@@ -1,0 +1,29 @@
+* {
+    border: none;
+    font-family: "Hack Nerd Font", monospace;
+    font-size: 13px;
+}
+
+window#waybar {
+    background: #000000;
+    color: #ffffff;
+    border-bottom: 1px solid #222222;
+}
+
+#workspaces button {
+    color: #555555;
+    padding: 0 8px;
+}
+
+#workspaces button.active {
+    color: #ffffff;
+}
+
+#clock, #cpu, #memory, #network, #battery, #pulseaudio, #language, #bluetooth {
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+#pulseaudio.muted {
+    color: #555555;
+}
