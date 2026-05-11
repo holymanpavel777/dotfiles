@@ -1,6 +1,6 @@
 * {
     border: none;
-    font-family: "Hack Nerd Font", monospace;
+    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
 }
 
@@ -43,3 +43,28 @@ window#waybar {
     -gtk-icon-style: symbolic;
     background-color: #eb4d4b; /* Красный фон, если Telegram пришло сообщение */
 }
+
+#custom-pomodoro {
+    padding: 0 10px;
+    transition: all 0.3s ease;
+}
+
+#custom-pomodoro.work {
+    color: #ff5555; /* Красный — работаем */
+}
+
+#custom-pomodoro.break {
+    color: #50fa7b; /* Зеленый — чилл */
+}
+
+#custom-pomodoro.finished {
+    background-color: #ff5555;
+    color: #ffffff;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    to { background-color: transparent; }
+}
+
+

@@ -46,12 +46,13 @@
 
 "custom/pomodoro": {
     "exec": "python ~/.config/waybar/pomodoro.py",
+    "return-type": "json",  // КРИТИЧНО: без этого будет каша из JSON
     "interval": 1,
     "format": "{}",
-    "on-click": "echo $(date +%s) > /tmp/pomodoro_state",
+    "on-click": "echo $(date +%s) work > /tmp/pomodoro_state",
+    "on-click-middle": "echo $(date +%s) break > /tmp/pomodoro_state",
     "on-click-right": "rm /tmp/pomodoro_state",
     "tooltip": false
 },
-
 
 }
