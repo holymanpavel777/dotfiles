@@ -3,7 +3,7 @@
     "position": "top",
     "height": 24,
     "modules-left": ["hyprland/workspaces"], //"hyprland/window"
-    "modules-center": ["clock"],
+    "modules-center": ["clock", "custom/pomodoro"],
     "modules-right": ["cpu", "memory", "network", "bluetooth", "pulseaudio", "tray", "hyprland/language", "battery"],
     
     "hyprland/workspaces": {
@@ -42,5 +42,16 @@
     "icon-size": 18,
     "spacing": 10
 },
+
+
+"custom/pomodoro": {
+    "exec": "python ~/.config/waybar/pomodoro.py",
+    "interval": 1,
+    "format": "{}",
+    "on-click": "echo $(date +%s) > /tmp/pomodoro_state",
+    "on-click-right": "rm /tmp/pomodoro_state",
+    "tooltip": false
+},
+
 
 }
